@@ -1,0 +1,35 @@
+.data{
+  text-align: center;
+}
+
+figure{
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+figure > img{
+  max-width: 100%;
+  display: block;
+  padding: 20px;
+  align-self: center;
+  justify-self: center;
+}
+
+.product{
+  flex: 0 0 calc(33.33% - 10px);
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin: 10px;
+  color: black;
+  padding: 30px 10px 30px 10px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 4px 4px 5px 0px rgba(122,122,122,1);
+  transform: scale(var(--escala, 1));
+}
+
+a:hover{
+  --escala: 1.03;
+}
